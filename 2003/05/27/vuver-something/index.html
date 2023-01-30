@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Welcome to My Blog, khum co gi ca">
+    <meta name="keywords" content="anhtv, Crypto, Web, Jav(a..), Python, HUST">
+    <meta name="theme-color" content="#000000">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Vuver - AnhTv | Blog | Just my Luv | More than Sharing">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Welcome to My Blog, khum co gi ca">
+    
+    <meta property="og:image" content="http://blog.anhtviesunshine.xyz/img/ava-va.jpg">
+    <meta property="og:url" content="http://blog.anhtviesunshine.xyz/2003/05/27/vuver-something/">
+    <meta property="og:site_name" content="AnhTv | Blog | Just my Luv | More than Sharing">
+
+    <title>Vuver - AnhTv | Blog | Just my Luv | More than Sharing</title>
+
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/pwa/manifest.json">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="http://blog.anhtviesunshine.xyz/2003/05/27/vuver-something/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+    
+</head>
+
+
+<body ontouchstart="">
+
+    <!-- Navigation -->
+
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">AnhTv Blog</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div id="huxblog_navbar">
+                <div class="navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                        
+                        
+                        <li>
+                            <a href="/archive/">Archive</a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li class="search-icon">
+                            <a href="javascript:void(0)">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <script>
+        // Drop Bootstarp low-performance Navbar
+        // Use customize navbar with high-quality material design animation
+        // in high-perf jank-free CSS3 implementation
+        var $body = document.body;
+        var $toggle = document.querySelector('.navbar-toggle');
+        var $navbar = document.querySelector('#huxblog_navbar');
+        var $collapse = document.querySelector('.navbar-collapse');
+
+        var __HuxNav__ = {
+            close: function () {
+                $navbar.className = " ";
+                // wait until animation end.
+                setTimeout(function () {
+                    // prevent frequently toggle
+                    if ($navbar.className.indexOf('in') < 0) {
+                        $collapse.style.height = "0px"
+                    }
+                }, 400)
+            },
+            open: function () {
+                $collapse.style.height = "auto"
+                $navbar.className += " in";
+            }
+        }
+
+        // Bind Event
+        $toggle.addEventListener('click', function (e) {
+            if ($navbar.className.indexOf('in') > 0) {
+                __HuxNav__.close()
+            } else {
+                __HuxNav__.open()
+            }
+        })
+
+        /**
+         * Since Fastclick is used to delegate 'touchstart' globally
+         * to hack 300ms delay in iOS by performing a fake 'click',
+         * Using 'e.stopPropagation' to stop 'touchstart' event from 
+         * $toggle/$collapse will break global delegation.
+         * 
+         * Instead, we use a 'e.target' filter to prevent handler
+         * added to document close HuxNav.  
+         *
+         * Also, we use 'click' instead of 'touchstart' as compromise
+         */
+        document.addEventListener('click', function (e) {
+            if (e.target == $toggle) return;
+            if (e.target.className == 'icon-bar') return;
+            __HuxNav__.close();
+        })
+    </script>
+    <!-- Search -->
+<div class="search-page">
+  <div class="search-icon-close-container">
+    <span class="search-icon-close">
+      <i class="fa fa-chevron-down"></i>
+    </span>
+  </div>
+  <div class="search-main container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <form></form>
+        <input type="text" id="search-input" placeholder="$ grep...">
+        
+        <div id="search-results" class="mini-post-list"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Post Header -->
+
+
+
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/post-notes-tva.jpg');
+        background: ;
+    }
+
+    
+    header.intro-header .header-mask{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: rgba(0,0,0, 0.3);
+    }
+    
+</style>
+
+
+
+
+<header class="intro-header">
+
+    <div class="header-mask"></div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/archive/?tag=somethingjusthappened" title="somethingjusthappened">somethingjusthappened</a>
+                        
+                    </div>
+                    <h1>Vuver</h1>
+                    
+                    <h2 class="subheading">Notes, notes, every n-day</h2>
+                    <span class="meta">Posted by anhtv on May 27, 2003</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <!-- Multi-Lingual -->
+                
+
+				<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <div class="post-content e-content" itemprop="articleBody">  
+
+    <div id="secure-container" style="display: none;">a302d95910d8e64fc1cfcf34b56c7b0d5a89bddf11893a7aad460051c3b884e7bc72be2c484a593c3a75fa19884fa268cd2f0596a53671a8e1b58163d6e70b82f87ee0acaeeeb70e1ad629942a815e30e77f08c0f0a8ddf301feb8b8a2f6f37510b6bfac78a3d88743a59359e729da85bdc786ed879f345c64086d93dfc6927ae89c44cbd15d39408dbde89abd8e2b8a1bdc33d3aa5bab48325570319521ce9e4246baaf88bbabf1db965767b6324d721fd899430af6e7590547923207d4bd2034295d0db2fadd6f29335a30ca43319e6da4c4e2f38b278072b02486bd02b5f517135ea303228a9ef9a883ad093f844cd8ae1757c95c3ef969d7fb3e3fd1a11ee2a81db026c75b2452c123a923bc250fef7123d94652504fdcd0b78fde409c652bccc9a7f1f9a8656865a7e77ba993aac4c66f6d3f11db137998dbb3fb832f34dc6d624b9ef1dac160251a759f0b882431e850a13ce3c9ea44e93bbad777d6dfd617cde75145a89ae679c8065e8aaabb70cf6de25488cad03ada89b0a5ea195d199e3796c9f13ab6b5a5106002038501a416537d488552b30b21308cc8334ebebf7903d6eec53389323c289cd8751b84865a799df45d7c18e2c87053941bee076782617f73ccff7847a91b046f4ce95ee5a6de4633369f5a6854f65be355b4ebe4faa243c3ba1d32439666adcfabf691fcb2e4c734167aab44ae3a075b032b3e24c2a10849bef5a53efbb4c9db8d250e6b476f2e2b93d131cc22c95227c2e17ffd89b83f977a59c38f1f534b64f4fca32bdc165a886740230629ec6b94e81a98de881e733ce273e2138e9eaf94b5f400ca942e0906fa83667f07b55c46f5178a1bd3c0397b3bdf2cbf0305c24ac7bba5b0507ad49e7227c02f02f60dd90ef512e7301c5cb4412ee8861e09150486c195536ab39c72ea4660a3330282868d14f338fee7fa8f57f6eb985bd3670a8aa2ce684de8c8f3ecf11caced221ad0f90f67bac146a2d16494098e07262a5e878fcc8e2e8ff6d0fa0df1fcbdec1b7aab21787a073f6781462359c5bda8ccb07f395489b0c8225626b7c70022696b32780e0bfce63e2be13c1fa7ec313f873d7b02030d3e7d96005ed27206b47474a0ee5a8380aa9dc16f80381561f56864cb8b2ce800d5b6fc34e5d10d41b16fb5af18618d84b4eb0fe8000c21d5d70b426ba4539cf7eaeb4c78818b1258ff83a50f23c7679589f8ca1c1fcce91fa03a6cf2caa18b65b38fa30899a4b3924f5dedbca60533f403e3eb36bab85df5cc5da49b61485071c688dbfb47338a00e958974a021699442c526182893c53d708686201d13a80756c260609bd5dff589a73baf4a4dec1946a416e127c995de2853edbb7240ea21328e85ba0b5fd1d1404f85ad311ae3a20eea8f8e0aa071212a7c5ea0d1a417e60273f1d6bf460d5237aab79f68c30b4fa1b948370e311633529e730ea83a54d3a100400c95e54c74474df5d61ae42a10a216f86c5f2d81e440da3b1b0997b49a977d77b6414e58d1a60911d5124417d36efd63323301d09fcb3a2c95eb389a73c93141d92acc2adc739a89cde5a2056e01098ce91c4f43b87cb1ffb34dbf3b1b841bdca7a495d1455efaa55452534ee96ca7fe165f5cc6d732e7aa702fcd77f8f907260d17359c71d0fb112ab8b73600fc3b1981cb53fb0690afbce4c74cfa44f33a973c52b02efa6bb243be959d7272db22703d350b6c59b6482792dbf4348f747ebee37a5582fcff7145e711fd50b95c5e4374238571d66c16bc101142ed788bbe0906a66b05ad3d0aaee00f04f46466101a9131058d3a86bac3ebbadfbc84fe16d9b29a6d46b2a56e1d2618a738014150b55476170622cde38f1935e95ae3b58208022772fcfc7173e7e88a17ed5021765d2215424a4df6e4c91c0cb2d86f27d1ca79fe8d46297e89d2fd2d4fdfd40a41fedc78674876854b2b699b6cd00d35ff887468cb3e5947774e0543fc5cdfed83acbe3a8fd09bae936fd48e5345a0b12c363b2c92c900dd0b3167a5360ae0e3e2ad4d7538b2567e8eaed0434785f8057812d4075cea8ad04ec857b9ea9a7f4cbf87e54e9d083cd22c54e53b096c0d969ac42a7711a61cdf729eb32a9cb6027c4b79642df74c58f15b793b56e5ff936b100ed0d309d38e24e2f7f0584c403d5d4bbcf3ae0cff9f9dbb3be88eabc63b385af52f3908435775c9211c6e5f6f52737cc2ea1689169859651c74ee261e5c46373db06a5c97473ffac9f6d2d89d70067bcbdb66292656ad46710f4b5c1cdb8cc7b27e916eb4c6fb44c63fad34e1321089a067de4498f5fe765592a863fefe54d9be18343aacaa2057ff39245404f1f8adcc8fe3ea4bbf3f6829f5bb20b2ef8c1849f8f29c05f95289788ac5fe0c2d92c6ddebf3108404afa27a2097c637e3f08d6367fbb5d6657bb4b284a1832a92b4717aae4cb28a4616db14e466c13a623ee6566f82a678278b76c0d2fdc6e925dbe03df0bde9ac278bb4238466f08b3a1418974aaab85b6e6dceead06b1f2af98abc157b26b2d59d5d614e520de3fdfc8e6a83619b3855de890a65b8c019cd166a48e738ab5c9bd9551d65e97e511413995d4ee68543c0731fe456c006dea17a6848d79ddb39725f39060812d2f24d8040a4fb69578f35362fefd7cea2c7fc1a626d24536bd90d87cbc5ec97122c803a3e968c4e06f27e7db3d3e98de199d284a155254f7810e3900dff985b57e950a5fece9b0a51fa86692bad2d92b6e54e8487ae987ac8d56e2942339a5ec7dd08dbe66d2f2154d15a6539c1e8362678ef02599e89ff2e1ec77378aebb0a59d2cb8d5660f7f2b24cc6e825da402052a3a80a0de66a0b6063ba0d394ac02086775fed87bc940e70f00eb865400704eaed1069c8bcc63a905ddf6acaac648e2e4ee16</div>
+
+    <div id="decryptor">
+      <h1>Oops!</h1>Oh :) This is protected page. Please type password<br><br>
+      <div class="container_pass" style="margin: 5px 0px;">
+        <div class="hidden_pass">
+          <svg class="lock" width="30" height="40" viewbox="0 0 30 40">
+            <path class="lock-white" d="M 12.519565,0 C 6.7072359,0 2.0282227,4.622895 2.0282227,10.365511 V 19.386852 C 0.81380849,20.12592 0,21.438885 0,22.957364 V 40 H 30 V 22.957364 C 30,21.444973 29.193452,20.135235 27.987171,19.394457 V 10.365511 C 27.987171,4.622895 23.308158,0 17.495831,0 Z M 12.519565,4.384239 H 17.495831 C 20.923632,4.384239 23.682489,7.111909 23.682489,10.498597 V 19.002803 H 6.3309823 V 10.498597 C 6.3309823,7.111909 9.091764,4.384239 12.519565,4.384239 Z"></path>
+          </svg>
+          <input id="key" type="password" class="hidden-input_pass">
+        </div>
+        <div class="revealed">
+          <svg class="lock" width="30" height="40" viewbox="0 0 30 40">
+            <path class="lock-black" d="M 12.519565,0 C 6.7072359,0 2.0282227,4.622895 2.0282227,10.365511 V 19.386852 C 0.81380849,20.12592 0,21.438885 0,22.957364 V 40 H 30 V 22.957364 C 30,21.444973 29.193452,20.135235 27.987171,19.394457 V 10.365511 C 27.987171,4.622895 23.308158,0 17.495831,0 Z M 12.519565,4.384239 H 17.495831 C 20.923632,4.384239 23.682489,7.111909 23.682489,10.498597 V 19.002803 H 6.3309823 V 10.498597 C 6.3309823,7.111909 9.091764,4.384239 12.519565,4.384239 Z"></path>
+          </svg>
+          <input class="revealed-input">
+        </div>
+        <div class="button">
+          <svg class="eye" width="36" height="36" viewbox="0 0 72 72">
+            <path class="eye-lower" d="M 15.6,37 C 15.6,37 24.309181,49.073101 34.102911,49.166773 43.896641,49.260445 53.4,37 53.4,37"></path>
+            <circle r="6" cy="36" cx="34.400002" class="eye-iris"></circle>
+            <path class="eye-lid" d="M -5,-5 V 37 H 15.6 C 15.6,37 25.327177,48.715274 34.312131,48.785 43.297085,48.854726 53.4,37 53.4,37 H 77 V -5 Z"></path>
+            <g class="eye-lashes">
+              <path class="eye-lash" d="M 17.45627,17.07484 24.778981,25.652873"></path>
+              <path class="eye-lash" d="M 34.602,12.600574 V 23.601076"></path>
+              <path class="eye-lash" d="M 51.580203,17.07484 44.257492,25.652873"></path>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div style="padding: 5px 0px;">
+        <button id="decrypt" class="button-81" role="button">Submit</button>
+      </div>
+      <style>
+        @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+        .container_pass {
+          /* background-color: #121726; */
+          /* background-color: #fff; */
+          border-radius: 10px;
+          height: 68px;
+          overflow: hidden;
+          position: relative;
+          width: 340px;
+        }
+        .hidden_pass {
+          background-color: #121726;
+          box-sizing: border-box;
+          height: 100%;
+          padding: 0 86px 0 60px;
+          position: absolute;
+          width: 100%;
+        }
+        .lock {
+          left: 28px;
+          position: absolute;
+          top: 14px;
+          width: 17px;
+        }
+        .lock-white {
+          fill: white;
+        }
+        .lock-black {
+          fill: black;
+        }
+        .hidden-input_pass {
+          background-color: transparent;
+          border: 0;
+          color: #575cba;
+          font-family: "Space Mono", monospace;
+          font-size: 18px;
+          height: 100%;
+          outline: none;
+          width: 100%;
+        }
+        .revealed {
+          background-color: #fff;
+          box-sizing: border-box;
+          clip-path: polygon(
+            85.39075% 28.16254%,
+            85.86161% 27.31304%,
+            86.33801% 26.7167%,
+            86.81675% 26.36695%,
+            87.29462% 26.25723%,
+            87.7684% 26.38091%,
+            88.23487% 26.73144%,
+            88.69081% 27.30221%,
+            89.13302% 28.08664%,
+            89.55826% 29.07816%,
+            89.96332% 30.27017%,
+            90.345% 31.6561%,
+            90.70007% 33.22935%,
+            91.02531% 34.98333%,
+            91.31751% 36.91147%,
+            91.57346% 39.00718%,
+            91.78992% 41.26386%,
+            91.95983% 43.6181%,
+            92.0791% 46.00012%,
+            92.14904% 48.39386%,
+            92.17099% 50.78321%,
+            92.14625% 53.15209%,
+            92.07615% 55.48444%,
+            91.96199% 57.76415%,
+            91.80511% 59.97518%,
+            91.6068% 62.10138%,
+            91.3684% 64.12672%,
+            91.09122% 66.0351%,
+            90.77657% 67.81044%,
+            90.42577% 69.43666%,
+            90.04014% 70.89766%,
+            89.621% 72.17737%,
+            89.16967% 73.25972%,
+            88.69881% 74.10923%,
+            88.22241% 74.70556%,
+            87.74366% 75.05532%,
+            87.26579% 75.16504%,
+            86.79201% 75.04135%,
+            86.32555% 74.69083%,
+            85.86961% 74.12006%,
+            85.4274% 73.33563%,
+            85.00216% 72.3441%,
+            84.59709% 71.15209%,
+            84.21541% 69.76616%,
+            83.86035% 68.19292%,
+            83.53511% 66.43893%,
+            83.2429% 64.51079%,
+            82.98696% 62.41508%,
+            82.77049% 60.1584%,
+            82.60059% 57.80416%,
+            82.48132% 55.42214%,
+            82.41137% 53.0284%,
+            82.38942% 50.63905%,
+            82.41416% 48.27017%,
+            82.48427% 45.93782%,
+            82.59843% 43.65811%,
+            82.75531% 41.4471%,
+            82.95362% 39.3209%,
+            83.19202% 37.29556%,
+            83.4692% 35.38717%,
+            83.78385% 33.61184%,
+            84.13465% 31.98561%,
+            84.52027% 30.5246%,
+            84.93942% 29.2449%
+          );
+          height: 100%;
+          padding: 0 86px 0 60px;
+          position: absolute;
+          pointer-events: none;
+          transition: clip-path 300ms cubic-bezier(0.4, 0, 0.2, 1);
+          width: 100%;
+        }
+        .revealed-input {
+          border: 0;
+          font-family: "Space Mono", monospace;
+          font-size: 18px;
+          height: 100%;
+          outline: none;
+          width: 100%;
+        }
+        .active .revealed {
+          clip-path: polygon(
+            2.28031% 0%,
+            14.21024% 0.00147%,
+            26.14016% 0%,
+            38.07008% 0.00147%,
+            50% 0%,
+            61.92992% 0.00147%,
+            73.85984% 0%,
+            85.78976% 0.00147%,
+            97.71969% 0%,
+            98.18037% 0.23084%,
+            98.60894% 0.89324%,
+            98.99635% 1.94205%,
+            99.33358% 3.33211%,
+            99.61159% 5.01825%,
+            99.82135% 6.95531%,
+            99.95383% 9.09814%,
+            100% 11.40157%,
+            100.00029% 21.05118%,
+            100% 30.70079%,
+            100.00029% 40.35039%,
+            100% 50%,
+            100.00029% 59.64961%,
+            100% 69.29921%,
+            100.00029% 78.94882%,
+            100% 88.59843%,
+            99.95383% 90.90186%,
+            99.82135% 93.04469%,
+            99.61159% 94.98175%,
+            99.33358% 96.66789%,
+            98.99635% 98.05795%,
+            98.60894% 99.10676%,
+            98.18037% 99.76916%,
+            97.71969% 100%,
+            85.78976% 100.00147%,
+            73.85984% 100%,
+            61.92992% 100.00147%,
+            50% 100%,
+            38.07008% 100.00147%,
+            26.14016% 100%,
+            14.21024% 100.00147%,
+            2.28031% 100%,
+            1.81963% 99.76916%,
+            1.39106% 99.10676%,
+            1.00365% 98.05795%,
+            0.66642% 96.66789%,
+            0.38841% 94.98175%,
+            0.17865% 93.04469%,
+            0.04617% 90.90186%,
+            0% 88.59843%,
+            0.00029% 78.94882%,
+            0% 69.29921%,
+            0.00029% 59.64961%,
+            0% 50%,
+            0.00029% 40.35039%,
+            0% 30.70079%,
+            0.00029% 21.05118%,
+            0% 11.40157%,
+            0.04617% 9.09814%,
+            0.17865% 6.95531%,
+            0.38841% 5.01825%,
+            0.66642% 3.33211%,
+            1.00365% 1.94205%,
+            1.39106% 0.89324%,
+            1.81963% 0.23084%
+          );
+        }
+        .button {
+          border-radius: 50%;
+          cursor: pointer;
+          height: 33px;
+          left: 280px;
+          position: absolute;
+          top: 18px;
+          width: 33px;
+        }
+        .eye {
+          left: 0px;
+          position: absolute;
+          top: -1px;
+        }
+        .eye-lower {
+          fill: none;
+          stroke: #575cba;
+          stroke-width: 4.5;
+          stroke-linecap: round;
+        }
+        .eye-iris {
+          fill: #575cba;
+          stroke-width: 4.65066;
+          stroke-linecap: round;
+        }
+        .eye-lid {
+          clip-path: polygon(17px 53px, 61px 52px, 57px 14px, 25px 14px);
+          fill: #fff;
+          stroke-linecap: butt;
+          stroke-width: 4.5;
+          stroke: #575cba;
+        }
+        .eye-lashes {
+          transform-origin: 50%;
+        }
+        .eye-lash {
+          fill: none;
+          stroke: #575cba;
+          stroke-width: 4.5;
+          stroke-linecap: butt;
+        }
+
+      </style>
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+      <script>
+        const container_pass = document.querySelector(".container_pass");
+        const hidden_pass = document.querySelector(".hidden_pass");
+        const hiddenInput = document.querySelector(".hidden-input_pass");
+        const revealed = document.querySelector(".revealed");
+        const revealedInput = document.querySelector(".revealed-input");
+        const button = document.querySelector(".button");
+        const timeline = anime
+          .timeline({
+            duration: 300,
+            easing: "cubicBezier(.4, 0, .2, 1)",
+            autoplay: false,
+          })
+          .add(
+            {
+              targets: document.querySelector(".eye-lid"),
+              d:
+                "M -5,-5 V 37 H 15.6 C 15.6,37 21.35124,23.469343 34.312131,23.469343 47.273022,23.469343 53.4,37 53.4,37 H 77 V -5 Z",
+            },
+            0
+          )
+          .add(
+            {
+              targets: document.querySelector(".eye-lashes"),
+              rotateX: ["180deg", "0deg"],
+            },
+            0
+          );
+        hiddenInput.addEventListener("input", () => {
+          if (!container_pass.classList.contains("active")) {
+            revealedInput.value = hiddenInput.value;
+          }
+        });
+        revealedInput.addEventListener("input", () => {
+          if (container_pass.classList.contains("active")) {
+            hiddenInput.value = revealedInput.value;
+          }
+        });
+        
+        button.addEventListener("click", () => {
+          container_pass.classList.toggle("active");
+          timeline.reverse();
+          timeline.play();
+          if (container_pass.classList.contains("active")) {
+            revealedInput.focus();
+          } else {
+            hiddenInput.focus();
+          }
+        });
+
+        container_pass.addEventListener("keypress", function (e){
+          if (e.key === 'Enter') {
+            document.getElementById("decrypt").click();
+          }
+        })
+        
+        timeline.reverse();
+        timeline.play();
+      </script>
+
+      <style>
+        .button-81 {
+          background-color: #fff;
+          border: 0 solid #e2e8f0;
+          border-radius: 1.5rem;
+          box-sizing: border-box;
+          color: #0d172a;
+          cursor: pointer;
+          display: inline-block;
+          font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+          font-size: 1.1rem;
+          font-weight: 600;
+          line-height: 1;
+          padding: 1rem 1.6rem;
+          text-align: center;
+          text-decoration: none #0d172a solid;
+          text-decoration-thickness: auto;
+          transition: all .1s cubic-bezier(.4, 0, .2, 1);
+          box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+          user-select: none;
+          -webkit-user-select: none;
+          touch-action: manipulation;
+        }
+
+        .button-81:hover {
+          background-color: #1e293b;
+          color: #fff;
+        }
+
+        @media (min-width: 768px) {
+          .button-81 {
+            font-size: 1.125rem;
+            padding: 1rem 2rem;
+          }
+        }
+      </style>
+    </div>
+  </div>
+
+
+  <a class="u-url" href="/2003/05/27/vuver-something/" hidden></a>
+</article>
+
+<!-- post decryption -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.rawgit.com/ricmoo/aes-js/e27b99df/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.js"></script>
+<script>
+  var storedEncrypted = '';
+  function decrypt(key) {
+    var text = storedEncrypted;
+    var keyArray = sha256.update(key + _gj.salt).array();
+    var iv = aesjs.utils.hex.toBytes(_gj.iv);
+    var encryptedBytes = aesjs.utils.hex.toBytes(text);
+    var aesCbc = new aesjs.ModeOfOperation.cbc(keyArray, iv);
+    var decryptedBytes = aesCbc.decrypt(encryptedBytes);
+    var final = aesjs.utils.utf8.fromBytes(decryptedBytes);
+
+    if (final.includes("0db9774b86aa5a219a0939cdd5c5aa08")){
+      var text = $($.parseHTML(final)).filter('#0db9774b86aa5a219a0939cdd5c5aa08').html();
+      $('#secure-container').html(text);
+      $('#secure-container').show();
+      $('#decryptor').remove();
+      generateCatalog(".catalog-body")
+
+      
+      
+    }else{
+      alert("Wrong password :) Try again");
+      
+    }
+    
+       
+  }    
+  $(document).ready(function() {
+    $( "#decrypt" ).click(function() {
+      storedEncrypted = $('#secure-container').text().trim();
+      key =  $('#key').val();
+      decrypt(key);
+    });
+  });   
+</script>
+<div id="crypt_params"><script>var _gj = {salt: '6b520d99017be0a8',  iv: '585bc0415f2781772e68c3ae360ba347' } </script></div>
+<!-- end of post decryption -->
+
+                <hr style="visibility: hidden;">
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/2023/01/26/first-blog/" data-toggle="tooltip" data-placement="top" title="First Blog">
+                        Next<br>
+                        <span>First Blog</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <hr style="visibility: hidden;">
+
+            </div>  
+
+    <!-- Side Catalog Container -->
+    
+        
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+        
+    
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+
+
+<section>
+    
+        <hr class="hidden-sm hidden-xs">
+    
+    <h5><a href="/archive/">FEATURED TAGS</a></h5>
+    <div class="tags">
+        
+        
+        
+        
+        
+    </div>
+</section>
+
+
+                <!-- Friends Blog -->
+                
+            </div>
+    
+        </div>
+    </div>
+</article>
+
+<!-- add support for mathjax by voleking-->
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'right',
+          // icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <!-- SNS Link -->
+                
+
+
+<ul class="list-inline text-center">
+
+
+  
+  
+  
+  
+  
+  
+  <li>
+    <a target="_blank" href="https://github.com/riotv27">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  
+  
+</ul>
+
+                <p class="copyright text-muted">
+                    Copyright © AnhTv Blog 2023
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<!-- Currently, only navbar scroll-down effect at desktop still depends on this -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- Simple Jekyll Search -->
+<script src="/js/simple-jekyll-search.min.js"></script>
+
+<!-- Service Worker -->
+
+<script src="/js/snackbar.js"></script>
+<script src="/js/sw-registration.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+        var d = document, t = 'script',
+            o = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        o.src = u;
+        if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+        s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+
+
+
+
+
+<!--fastClick.js -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function () {
+        var $nav = document.querySelector("nav");
+        if ($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics
+ -->
+
+
+
+
+
+<!-- Side Catalog -->
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        // interop with multilangual 
+        if ('' == 'true') {
+            _containerSelector = 'div.post-container.active'
+        } else {
+            _containerSelector = 'div.post-container'
+        }
+
+        // init
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        // clean
+        $(selector).html('')
+
+        // appending
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    // toggle side catalog
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    /*
+     * Doc: https://github.com/davist11/jQuery-One-Page-Nav
+     * Fork by Hux to support padding
+     */
+    async("/js/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+<!-- Multi-Lingual -->
+
+
+<!-- Simple Jekyll Search -->
+<script>
+    // https://stackoverflow.com/questions/1912501/unescape-html-entities-in-javascript
+    function htmlDecode(input) {
+        var e = document.createElement('textarea');
+        e.innerHTML = input;
+        // handle case of empty input
+        return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
+    }
+
+    SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('search-results'),
+        json: '/search.json',
+        searchResultTemplate: '<div class="post-preview item"><a href="{url}"><h2 class="post-title">{title}</h2><h3 class="post-subtitle">{subtitle}</h3><hr></a></div>',
+        noResultsText: 'No results',
+        limit: 50,
+        fuzzy: false,
+        // a hack to get escaped subtitle unescaped. for some reason, 
+        // post.subtitle w/o escape filter nuke entire search.
+        templateMiddleware: function (prop, value, template) {
+            if (prop === 'subtitle' || prop === 'title') {
+                if (value.indexOf("code")) {
+                    return htmlDecode(value);
+                } else {
+                    return value;
+                }
+            }
+        }
+    });
+
+    $(document).ready(function () {
+        var $searchPage = $('.search-page');
+        var $searchOpen = $('.search-icon');
+        var $searchClose = $('.search-icon-close');
+        var $searchInput = $('#search-input');
+        var $body = $('body');
+
+        $searchOpen.on('click', function (e) {
+            e.preventDefault();
+            $searchPage.toggleClass('search-active');
+            var prevClasses = $body.attr('class') || '';
+            setTimeout(function () {
+                $body.addClass('no-scroll');
+            }, 400)
+
+            if ($searchPage.hasClass('search-active')) {
+                $searchClose.on('click', function (e) {
+                    e.preventDefault();
+                    $searchPage.removeClass('search-active');
+                    $body.attr('class', prevClasses);  // from closure 
+                });
+                $searchInput.focus();
+            }
+        });
+    });
+</script>
+
+
+</body>
+
+</html>
